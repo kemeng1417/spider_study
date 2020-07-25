@@ -1,0 +1,85 @@
+- 异步爬虫
+    - 基于线程池的异步爬虫
+    - 基于多任务异步协程（重点）
+
+- 为了营造更好的实验结果
+    - 需要自己搭建一个flask服务器
+
+- 线程池
+    - from multiprocessing.dummy import Pool
+    - pip install Flask
+
+- 多任务异步协程（asyncio)
+    - pip install asyncio
+    - 特殊函数
+        - 如果一个函数的定义被async关键字修饰，就变成一个特殊的函数
+        - 特殊之处：
+            - 该函数调用后函数内部的语句不会立即执行
+            - 该函数调用后返回一个协程对象
+    - 协程
+        - 对象，该对象是特殊函数调用后的协程对象
+        - 协程对象=特殊函数
+        - 一个函数表示一组特定的操作，协程也是一组特定的操作
+    - 任务对象
+        - 就是一个高级的协程对象
+        - 任务对象 == 协程对象 == 特殊的函数
+        - 任务对象 == 特殊的函数
+        - 任务对象表示一组特定的操作
+        - 如何创建：
+            task = asyncio.ensure_future(c) # c就是协程对象
+
+    - 事件循环 EventLoop
+        - 对象
+        - 如何创建该对象
+            - loop = asyncio.get_event_loop()
+        - 作用：
+            - 用来装载（协程）对象的
+                - 可以将事件循环当做一个容器，可以用来存放一个或多个任务对象
+            - 如果事件循环存放了多个任务对象并且事件循环启动后，事件循环对象就可以异步的将每一个任务对象
+              对应的指定操作进行一一执行
+        - 如何将任务对象存储且启动事件循环对象
+            - loop.run_until_complete(task) # 将一个任务对象进行存储
+
+        - 问题
+            - 事件循环启动后，任务对象对应的指定操作已被执行，但是如果这组指定操作中有返回值，如何获取？
+                - 基于任务对象的回调函数，可以用来获取返回值
+                - 如何绑定回调函数？
+                    - task.add_done_callback(parse)
+                    - # 注意：回调函数必须要求一个函数，参数表示的是该函数的绑定者
+                        def parse(task):
+                            # result():返回的就是特殊函数的返回值
+                            page_text = task.result()
+            - 任务对象在事件循环中是否是基于异步执行的呢？
+                - 一个任务对象无法检测出是否被异步执行
+                - 需要将多个任务对象注册事件循环中进行测试
+                    - 如何将多个任务对象注册到任务循环中
+        - wait()方法的作用：
+            - 表示挂起的意思
+            - loop.run_until_complete(asyncio.wait(tasks)) 将任务列表中的每一个任务对象进行挂起，tasks表示任务列表
+            - 挂起：让当前的任务对象交出cpu的使用权
+        - 重要注意事项：
+            - 在特殊函数内部的实现语句中不可以出现不支持异步的模块代码，否则会中断异步执行的效果
+
+- 支持异步网络请求的模块(aiohttp)
+    - pip install aiohttp
+    - aiohttp的编码使用：
+        - 编写一个大致的架构、
+                async with aiohttp.ClientSession() as sess: # 实例化一个请求对象sess
+                    async with sess.get(url=url) as response: # 调用get发请求，返回一个响应对象
+                        page_text = response.text() # text()返回字符串形式的响应数据
+                        return page_text
+        - 在架构中补充细节
+            - 在每个with前加上async关键字
+            - 在每一个阻塞前加await关键字
+            - 完整代码
+                    async with aiohttp.ClientSession() as sess: # 实例化一个请求对象sess
+                        async with await sess.get(url=url) as response: # 调用get发请求，返回一个响应对象
+                            page_text = await response.text() # text()返回字符串形式的响应数据
+                            return page_text
+            - await 关键字可以确保在异步执行操作中保证阻塞操作执行完毕
+
+- 实战说明
+    - 如果想使用该模式进行异步的数据爬取必须：
+        - 将等待爬取的url提取到列表中
+        - 使用requests将等待爬取页面的url获取
+        - 将url写入列表，使用多任务异步协程爬取列表中页面数据

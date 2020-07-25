@@ -1,0 +1,152 @@
+scrapy异步爬虫框架
+
+一、什么是Scrapy?
+    scrapy是一个为了爬取网站数据，提取结构性数据而编写的应用框架
+    集成各种功能：高性能异步下载、队列、分布式、解析、持久化等
+    通用性强
+
+二、安装
+    Linux
+        pip3 install scrapy
+
+    windows：
+        pip3 install wheel
+        下载twisted http://www.lfd/uci.edu/~gohlke/pythonlibs/#twisted
+        进入下载目录安装
+        pip3 install pywin32
+        pip3 install scrapy
+
+三、基本使用
+    - 创建一个工程
+        - scrapy startproject proName
+        - 工程目录下的两个文件表示的含义
+            - spiders包：爬虫文件夹
+                - 必须在爬虫文件夹中创建一个爬虫源文件
+            - settings.py 配置文件
+    - cd proName
+        - 创建一个爬虫文件（爬虫文件要创建在spiders包中）
+        - scrapy genspider spiderName www.example.com
+        - 爬虫文件可以创建多个，名称不能重复
+    - 编写爬虫文件
+    - 执行工程
+        - scrapy crawl spiderName
+
+四、爬虫文件的编写
+    - 定义好了一个类，该类的父类是Spider，是scrapy所有类的父类
+    - 类中定义三个属性和一个方法：
+        - name：爬虫文件的名称
+        - start_urls:起始url列表
+            - 作用：可以对列表中的url进行get请求的发送
+        - allow_domains:允许的域名
+        - parse(self,response):
+            - 将起始url请求成功后，response就是获取的响应的对象
+            可以在该方法中实现数据解析
+    - scrapy工程默认是遵从robots协议，需要在配置中关闭
+        - 改为不遵从
+        - 指定日志等级
+            - LOG_LEVEL = 'ERROR'
+
+五、数据解析
+    - response.xpath()
+    - 注意：
+        - 提取标签内容时，返回的不是字符串，而是Selector对象，字符串是存储在该对象中的
+        - 需要调用extract()或者extract_first()将Selector对象中的字符串取出
+
+六、持久化存储
+    - 基于终端指令：
+        - 只可以将parse方法的返回值写入到指定后缀的文本文件中
+        - 通过指定方式执行工程：
+            - scrapy crawl duanzi -o data_duanzi.csv
+    - 基于管道：
+        - 实现流程
+            - 1.在爬虫文件中解析数据
+            - 2.在Item类中定义相关的属性（解析的数据有几个字段就定义几个属性）
+            - 3.将在爬虫文件中解析的数据存储封装到Item对象中
+            - 4.将存储了解析数据的Item对象提交给管道
+            - 5.在管道文件中接收Item对象，且对其进行任意形式的持久化存储操作
+            - 6.在配置文件中开启管道
+    - 如何实现数据的备份
+        - 将数据存储到多个不同的空间中（文件、mysql、redis）
+        - 持久化存储的操作必须存储在管道文件中
+            - 一个管道类对应一种形式的持久化存储
+                - 如果想将数据存储到多个载体中，必须有多个管道类
+        - 问题：让两个管道类都接收到item且对其进行持久化存储，爬虫文件提交的item是否可以同时提交给两个管道类？
+            - 爬虫文件提交的item只能提交给优先级最高的管道类
+        - 如何让优先级管道类也可以获取接收到item呢？
+            - 可以让优先级高的管道类的process_item中通过return item 的形式将item返回给下一个即将被执行的管道类
+
+
+七、手动请求发送实现的全站数据爬取
+    - 通过代码手动发起请求
+        - yield scrapy.Request(url, callback)->get请求
+        - yield scrapy.FormRequest(url, formdata, callback)->post请求
+        - 注意：在scrapy中一般不发送post请求
+
+请求传参
+    - 作用：实现深度爬取
+    - 深度爬取：存在不同页面中的数据
+    - 实现：
+        - yield scrapy.Request(url,callback,meta={'item':item})
+            - 可以将meta字典传递给callback
+        - callback接收meta：
+            - meta = response.meta
+
+- 五大核心组件
+    - 引擎（scrapy）
+        - 用来接收整个系统的数据流，触发事务（框架核心）
+    - 调度器（Scheduler)
+        - 用来接收引擎发送过来的请求，压入队列中，并在引擎再次请求时返回，决定了队列的优先级，决定下一个url是什么，同时去除重复的url
+    - 下载器（downloader)
+        - 用于下载网页内容，并将网页内容返回scrapy，时建立在twisted上的高效的异步框架
+    - 爬虫（spider）
+        - 用于在网页中提取有用的信息，即item，用户可以提出链接，让他继续抓取下一个页面
+    - 项目管道（pipeline）
+        - 负责处理爬虫从网页中抽取的实体，主要功能是持久化存储、验证实体的有效性，清除不需要的信息，当页面被爬虫解析后，发送到管道，并进行几个特定次序的处理。
+
+
+- scrapy配置文件settings.py其他配置
+    增加并发
+        - 默认scrapy开启的并发是16个，可以适当的增加，在settings.py中修改CONCURRENT_REQUESTS=100,并设置成100
+    降低日志级别
+        - 在运行scrapy时，会有大量日志信息的输出，为了减少CPU的使用率，可以设置log输出信息为INFO或者ERROR即可，在配置中编写：LOG_LEVEL='ERROR'
+    禁止cookie
+        - 如果不需要cookie，则在scrapy爬取数据时禁止cookie从而减少cpu的使用，提升爬虫的效率，COOKIES_ENABLED = False
+    禁止重试
+        -  对失败的HTTP进行重新请求（重试）会减慢爬取速度，因此可以禁止重试。在配置文件中编写：RETRY_ENABLED = False
+     减少下载超时：
+        如果对一个非常慢的链接进行爬取，减少下载超时可以能让卡住的链接快速被放弃，从而提升效率。在配置文件中进行编写：DOWNLOAD_TIMEOUT = 10 超时时间为10s
+
+
+
+- 中间件
+    - 下载中间件
+    - 爬虫中间件
+    - 作用：
+        - 下载中间件是处于引擎和下载器之间。批量拦截请求和响应
+    - 拦截请求
+        - 请求头的伪装
+            - process_request:
+                - request.headers['xxx'] = 'xxx'  局部的UA伪装
+        - 代理
+            - process_exception:
+                - request.meta['proxy'] = 'http://ip:port'
+
+
+        - process_request:每次发起请求，请求都会被该方法拦截到
+        - process_response:只要返回一个响应，都会被该方法拦截到
+        - process_exception:只要有异常的请求，就会被该方法拦截到，该方法负责对异常的请求进行修正，且通过return request将修
+            正后的请求重新发送
+    - 拦截响应
+        - 篡改响应数据（不重要）
+
+
+
+- CrawlSpider
+    - 是spider的一个子类，之前创建的爬虫文件的爬虫类的父类就是Spider
+    - 作用：用于实现全站数据爬取
+    - 使用：
+        - 创建工程
+        - cd进入工程目录中
+        - 创建爬虫文件：
+            - scrapy genspider -t crawl spidername www.xx.com
+        - 执行工程
