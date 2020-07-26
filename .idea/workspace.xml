@@ -1,64 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3e68ef44-6b82-44ba-8978-ef40e55c77d7" name="Default Changelist" comment="" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <list default="true" id="3e68ef44-6b82-44ba-8978-ef40e55c77d7" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day08_scrapy异步爬虫框架/crawlPro/crawlPro/items.py" beforeDir="false" afterPath="$PROJECT_DIR$/day08_scrapy异步爬虫框架/crawlPro/crawlPro/items.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day08_scrapy异步爬虫框架/crawlPro/crawlPro/pipelines.py" beforeDir="false" afterPath="$PROJECT_DIR$/day08_scrapy异步爬虫框架/crawlPro/crawlPro/pipelines.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day08_scrapy异步爬虫框架/crawlPro/crawlPro/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/day08_scrapy异步爬虫框架/crawlPro/crawlPro/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day08_scrapy异步爬虫框架/crawlPro/crawlPro/spiders/sun.py" beforeDir="false" afterPath="$PROJECT_DIR$/day08_scrapy异步爬虫框架/crawlPro/crawlPro/spiders/sun.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day08_scrapy异步爬虫框架/note" beforeDir="false" afterPath="$PROJECT_DIR$/day08_scrapy异步爬虫框架/note" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/day08_scrapy异步爬虫框架/note">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="151" column="14" selection-start-line="151" selection-start-column="14" selection-end-line="151" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/day08_scrapy异步爬虫框架/crawlPro/crawlPro/spiders/sun.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="19" column="19" lean-forward="true" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
-              <folding>
-                <element signature="e#0#13#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/day08_scrapy异步爬虫框架/middleWarePro/middleWarePro/settings.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="303">
-              <caret line="56" selection-start-line="56" selection-end-line="56" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/day08_scrapy异步爬虫框架/middleWarePro/middleWarePro/middlewares.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="174">
-              <caret line="64" selection-start-line="64" selection-end-line="64" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/day08_scrapy异步爬虫框架/middleWarePro/middleWarePro/spiders/middleWare.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="11" selection-start-line="11" selection-end-line="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -73,91 +29,20 @@
       <find>middleware</find>
     </findStrings>
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/day05_异步爬虫/templates/test.html" />
-        <option value="$PROJECT_DIR$/day05_异步爬虫/MyServer.py" />
-        <option value="$PROJECT_DIR$/day05_异步爬虫/1_线程池操作.py" />
-        <option value="$PROJECT_DIR$/day05_异步爬虫/templates/2_协程.py" />
-        <option value="$PROJECT_DIR$/day05_异步爬虫/templates/3_多任务协程.py" />
-        <option value="$PROJECT_DIR$/day05_异步爬虫/note" />
-        <option value="$PROJECT_DIR$/jj.py" />
-        <option value="$PROJECT_DIR$/day08_scrapy异步爬虫框架/firstBlood/firstBlood/spiders/first.py" />
-        <option value="$PROJECT_DIR$/day08_scrapy异步爬虫框架/firstBlood/firstBlood/settings.py" />
-        <option value="$PROJECT_DIR$/day08_scrapy异步爬虫框架/duanziPro/duanziPro/items.py" />
-        <option value="$PROJECT_DIR$/day08_scrapy异步爬虫框架/duanziPro/duanziPro/spiders/duanzi.py" />
-        <option value="$PROJECT_DIR$/day08_scrapy异步爬虫框架/duanziPro/duanziPro/settings.py" />
-        <option value="$PROJECT_DIR$/day08_scrapy异步爬虫框架/duanziPro/duanziPro/pipelines.py" />
-        <option value="$PROJECT_DIR$/day08_scrapy异步爬虫框架/sunPro/sunPro/settings.py" />
-        <option value="$PROJECT_DIR$/day08_scrapy异步爬虫框架/sunPro/sunPro/spiders/sun.py" />
-        <option value="$PROJECT_DIR$/day08_scrapy异步爬虫框架/movie/movie/settings.py" />
-        <option value="$PROJECT_DIR$/day08_scrapy异步爬虫框架/movie/movie/pipelines.py" />
-        <option value="$PROJECT_DIR$/day08_scrapy异步爬虫框架/movie/movie/items.py" />
-        <option value="$PROJECT_DIR$/day08_scrapy异步爬虫框架/movie/movie/spiders/mv.py" />
-        <option value="$PROJECT_DIR$/day08_scrapy异步爬虫框架/duanziPro/duanziPro/middlewares.py" />
-        <option value="$PROJECT_DIR$/day08_scrapy异步爬虫框架/middleWarePro/middleWarePro/settings.py" />
-        <option value="$PROJECT_DIR$/day08_scrapy异步爬虫框架/middleWarePro/middleWarePro/spiders/middleWare.py" />
-        <option value="$PROJECT_DIR$/day08_scrapy异步爬虫框架/middleWarePro/middleWarePro/middlewares.py" />
-        <option value="$PROJECT_DIR$/day08_scrapy异步爬虫框架/note" />
-      </list>
-    </option>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-10" />
-    <option name="y" value="-10" />
-    <option name="width" value="980" />
-    <option name="height" value="1050" />
-  </component>
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="jupyter_project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jupyter_project" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jupyter_project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jupyter_project" type="462c0819:PsiDirectoryNode" />
-              <item name="day08_scrapy异步爬虫框架" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jupyter_project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jupyter_project" type="462c0819:PsiDirectoryNode" />
-              <item name="day08_scrapy异步爬虫框架" type="462c0819:PsiDirectoryNode" />
-              <item name="crawlPro" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jupyter_project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jupyter_project" type="462c0819:PsiDirectoryNode" />
-              <item name="day08_scrapy异步爬虫框架" type="462c0819:PsiDirectoryNode" />
-              <item name="crawlPro" type="462c0819:PsiDirectoryNode" />
-              <item name="crawlPro" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jupyter_project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jupyter_project" type="462c0819:PsiDirectoryNode" />
-              <item name="day08_scrapy异步爬虫框架" type="462c0819:PsiDirectoryNode" />
-              <item name="crawlPro" type="462c0819:PsiDirectoryNode" />
-              <item name="crawlPro" type="462c0819:PsiDirectoryNode" />
-              <item name="spiders" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-    </panes>
+  <component name="ProjectId" id="1fAx83WroZArGAObI8NuH38Xigl" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/day05_异步爬虫/templates" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
@@ -169,18 +54,6 @@
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\jupyter_project\day05_异步爬虫" />
     </key>
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
   </component>
   <component name="RunManager" selected="Python.jj">
     <configuration name="1_线程池操作" type="PythonConfigurationType" factoryName="Python" temporary="true">
@@ -319,318 +192,24 @@
       <workItem from="1595423813308" duration="6742000" />
       <workItem from="1595470909065" duration="5456000" />
       <workItem from="1595572832648" duration="5529000" />
+      <workItem from="1595674541763" duration="4976000" />
     </task>
     <servers />
-  </component>
-  <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36195000" />
-  </component>
-  <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19839142" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.70579916" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.43422914" />
-      <window_info anchor="bottom" id="Python Console" order="12" weight="0.32956153" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="SciView" order="3" />
-      <window_info anchor="right" id="Database" order="4" />
-    </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="WindowStateProjectService">
+    <state x="345" y="78" key="SettingsEditor" timestamp="1595674917238">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="345" y="78" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1595674917238" />
+  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/jupyter_project$3_.coverage" NAME="3_多任务协程 Coverage Results" MODIFIED="1594309753547" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day05_异步爬虫/templates" />
     <SUITE FILE_PATH="coverage/jupyter_project$jj.coverage" NAME="jj Coverage Results" MODIFIED="1594889436436" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/jupyter_project$2_.coverage" NAME="2_协程 Coverage Results" MODIFIED="1594306310610" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day05_异步爬虫/templates" />
     <SUITE FILE_PATH="coverage/jupyter_project$1_.coverage" NAME="1_线程池操作 Coverage Results" MODIFIED="1594303327676" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day05_异步爬虫" />
     <SUITE FILE_PATH="coverage/jupyter_project$MyServer.coverage" NAME="MyServer Coverage Results" MODIFIED="1594302419888" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day05_异步爬虫" />
-    <SUITE FILE_PATH="coverage/jupyter_project$3_.coverage" NAME="3_多任务协程 Coverage Results" MODIFIED="1594309753547" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day05_异步爬虫/templates" />
-    <SUITE FILE_PATH="coverage/jupyter_project$2_.coverage" NAME="2_协程 Coverage Results" MODIFIED="1594306310610" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day05_异步爬虫/templates" />
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/day05_异步爬虫/1_线程池操作.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="550">
-          <caret line="28" selection-start-line="28" selection-end-line="32" selection-end-column="1" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jj.py" />
-    <entry file="file://$PROJECT_DIR$/day05_异步爬虫/templates/3_多任务协程.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="613">
-          <caret line="48" selection-start-line="48" selection-end-line="48" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/day05_异步爬虫/MyServer.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
-          <caret line="24" column="14" selection-start-line="24" selection-start-column="14" selection-end-line="24" selection-end-column="14" />
-          <folding>
-            <element signature="e#0#40#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/day05_异步爬虫/2_协程.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="613">
-          <caret line="30" column="33" selection-start-line="30" selection-start-column="33" selection-end-line="30" selection-end-column="33" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/day05_异步爬虫/templates/test.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="613">
-          <caret line="17491" column="25" selection-start-line="17491" selection-start-column="25" selection-end-line="17491" selection-end-column="25" />
-          <folding>
-            <element signature="e#110074#110221#2" expanded="true" />
-            <element signature="e#164446#164465#1" expanded="true" />
-            <element signature="e#171047#171334#1" expanded="true" />
-            <element signature="e#174494#174513#1" expanded="true" />
-            <element signature="e#175258#175549#2" expanded="true" />
-            <element signature="e#241756#241775#1" expanded="true" />
-            <element signature="e#248357#248644#1" expanded="true" />
-            <element signature="e#251804#251823#1" expanded="true" />
-            <element signature="e#252568#252859#2" expanded="true" />
-            <element signature="n#style#0;n#a#9;n#div#2;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#337251#337257#1" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#font#0;n#div#2;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#td#0;n#tr#0;n#table#0;n#div#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#tbody#1;n#table#0;n#div#0;n#div#0;n#div#1;n#div#0;n#td#0;n#tr#0;n#table#0;n#div#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#tbody#2;n#table#0;n#div#0;n#div#0;n#div#1;n#div#0;n#td#0;n#tr#0;n#table#0;n#div#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#section#0;n#article#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#section#0;n#article#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#section#0;n#article#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#3;n#div#0;n#div#0;n#section#0;n#article#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#a#1;n#div#1;n#div#0;n#section#0;n#article#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#div#1;n#div#2;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#0;n#div#1;n#div#2;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#div#1;n#div#1;n#div#0;n#div#1;n#div#2;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#0;n#div#2;n#div#0;n#section#0;n#article#0;n#div#0;n#div#2;n#div#2;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#1;n#div#0;n#div#2;n#div#0;n#section#0;n#article#0;n#div#0;n#div#2;n#div#2;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#0;n#div#3;n#div#0;n#section#0;n#article#0;n#div#0;n#div#2;n#div#2;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#1;n#div#0;n#div#3;n#div#0;n#section#0;n#article#0;n#div#0;n#div#2;n#div#2;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#0;n#div#4;n#div#0;n#section#0;n#article#0;n#div#0;n#div#2;n#div#2;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#1;n#div#0;n#div#4;n#div#0;n#section#0;n#article#0;n#div#0;n#div#2;n#div#2;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#div#5;n#div#0;n#section#0;n#article#0;n#div#0;n#div#2;n#div#2;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#div#1;n#div#3;n#div#2;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#div#1;n#div#4;n#div#2;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#div#1;n#div#5;n#div#2;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#div#1;n#div#6;n#div#2;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#div#1;n#div#7;n#div#2;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#div#1;n#div#8;n#div#2;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#3;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#0;n#div#3;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/day05_异步爬虫/note">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="549">
-          <caret line="84" column="37" selection-start-line="84" selection-start-column="37" selection-end-line="84" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/day08_scrapy异步爬虫框架/firstBlood/scrapy.cfg">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/day08_scrapy异步爬虫框架/firstBlood/firstBlood/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="22" column="19" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/day08_scrapy异步爬虫框架/duanziPro/data_duanzi.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="6" column="13" lean-forward="true" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/day08_scrapy异步爬虫框架/duanziPro/duanzi.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1061" />
-      </provider>
-    </entry>
-    <entry file="file://C:/km/Lib/site-packages/twisted/internet/defer.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="653" selection-start-line="653" selection-end-line="653" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/day08_scrapy异步爬虫框架/duanziPro/duanziPro/pipelines.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="63" column="4" selection-start-line="63" selection-start-column="4" selection-end-line="63" selection-end-column="4" />
-          <folding>
-            <element signature="e#238#273#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/day08_scrapy异步爬虫框架/sunPro/sunPro/spiders/sun.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/day08_scrapy异步爬虫框架/sunPro/sunPro/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="16" column="130" lean-forward="true" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="130" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/day08_scrapy异步爬虫框架/movie/movie/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="223">
-          <caret line="61" column="2" lean-forward="true" selection-start-line="61" selection-start-column="2" selection-end-line="61" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/day08_scrapy异步爬虫框架/duanziPro/duanziPro/items.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="13" column="28" lean-forward="true" selection-start-line="13" selection-start-column="28" selection-end-line="13" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/km/Lib/site-packages/scrapy/item.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="82">
-          <caret line="98" selection-start-line="98" selection-end-line="98" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/day08_scrapy异步爬虫框架/firstBlood/firstBlood/spiders/first.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="13" column="22" lean-forward="true" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/day08_scrapy异步爬虫框架/duanziPro/duanziPro/spiders/duanzi.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-737">
-          <caret line="10" selection-start-line="9" selection-end-line="10" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/km/Lib/site-packages/scrapy/http/request/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="18" column="67" lean-forward="true" selection-start-line="18" selection-start-column="67" selection-end-line="18" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/day08_scrapy异步爬虫框架/movie/movie/items.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="12" column="8" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/day08_scrapy异步爬虫框架/movie/movie/spiders/mv.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="3" column="30" selection-start-line="3" selection-start-column="30" selection-end-line="3" selection-end-column="30" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/day08_scrapy异步爬虫框架/movie/movie/pipelines.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="4" selection-start-column="4" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/day08_scrapy异步爬虫框架/duanziPro/duanziPro/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="17" column="130" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="130" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/day08_scrapy异步爬虫框架/duanziPro/duanziPro/middlewares.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1166">
-          <caret line="56" selection-start-line="11" selection-end-line="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/day08_scrapy异步爬虫框架/middleWarePro/middleWarePro/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="303">
-          <caret line="56" selection-start-line="56" selection-end-line="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/day08_scrapy异步爬虫框架/middleWarePro/middleWarePro/spiders/middleWare.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/day08_scrapy异步爬虫框架/middleWarePro/middleWarePro/middlewares.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="64" selection-start-line="64" selection-end-line="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/day08_scrapy异步爬虫框架/note">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="151" column="14" selection-start-line="151" selection-start-column="14" selection-end-line="151" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/day08_scrapy异步爬虫框架/crawlPro/crawlPro/spiders/sun.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="19" column="19" lean-forward="true" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
   </component>
 </project>

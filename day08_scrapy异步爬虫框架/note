@@ -149,4 +149,9 @@ scrapy异步爬虫框架
         - cd进入工程目录中
         - 创建爬虫文件：
             - scrapy genspider -t crawl spidername www.xx.com
+        - 链接提取器，规则解析器，是CrawlSpider独有的
+        - 链接提取器LinkExtractor
+            - 作用：根据指定规则（allow）进行链接的提取
+        - 规则解析器
+            - 作用：可以接收链接提取器提取到链接，且对其进行请求发送，然后根据指定形式callback进行数据解析
         - 执行工程
