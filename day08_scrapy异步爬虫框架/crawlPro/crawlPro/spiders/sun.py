@@ -11,7 +11,7 @@ class SunSpider(CrawlSpider):
 
     # 提取页码链接
     link = LinkExtractor(allow=r'id=1&page=\d+')
-    detail_link = LinkExtractor(allow=r'index?id=\d+')
+    detail_link = LinkExtractor(allow=r'index\?id=\d+')
     rules = (
         # 实例化一个Rule对象，调用的是该对象的构造方法
         Rule(link, callback='parse_item', follow=False),
@@ -31,8 +31,13 @@ class SunSpider(CrawlSpider):
         #item['name'] = response.xpath('//div[@id="name"]').get()
         #item['description'] = response.xpath('//div[@id="description"]').get()
     def parse_detail(self, response):
-        content = response.xpath('/html/body/div[3]/div[2]/div[2]/div[2]/text()').extract_first()
+        print(response)
+        content = response.xpath('/html/body/div[3]/div[2]/div[2]/div[2]/pre/text()').extract_first()
 
         item = ContentItem()
         item['content'] = content
         yield item
+
+
+# 注意：不使用请求传参持久化存储可以实现，但是无法实现数据一一对应。
+# crawlspider通常和手动传参搭配使用。

@@ -155,3 +155,78 @@ scrapy异步爬虫框架
         - 规则解析器
             - 作用：可以接收链接提取器提取到链接，且对其进行请求发送，然后根据指定形式callback进行数据解析
         - 执行工程
+
+
+    - 注意
+        - 注意：不使用请求传参持久化存储可以实现，但是无法实现数据一一对应。
+        - crawlSpider通常和手动传参搭配使用。
+        - 一个链接提取器对应一个规则解析器
+        - 可以有多个链接提取器和规则解析器
+        - 使用CrawlSpider实现深度爬取最好结合手动请求一起发送
+        - 如何使用CrawlSpider将一个网站中所有的链接捕获到？
+            - LinkExtract(allow=''),将正则匹配的规则设为空
+
+    - follow=True
+        - 让链接提取器继续作用到链接提取器到的链接，所对应的页面中
+
+- 分布式
+    - 概念：使用多台机器搭建一个分布式机器，在分布式机群中共同运行同一组程序，让其对同一个网络资源进行联合数据爬取
+    - 原生的Scrapy无法实现分布式？
+        - 调度器无法被分布式机群共享
+        - 管道无法共享
+    - 如何实现分布式？
+        - 使用scrapy结合scrapy-redis组件实现分布式
+    - scrapy-redis组件使用：
+        - 给scrapy提供可以被共享的管道和调度器
+        - pip install scrapy-redis
+    - 实现流程
+        1.创建工程
+        2.cd 工程
+        3.创建爬虫文件
+        4.修改爬虫文件
+            - 导包：from scrapy_redis.spiders import RedisCrawlSpider
+            - 修改当前爬虫类的父类：
+                - RedisCrawlSpider
+            - 删除start_urls，添加一个新属性：
+                - redis_key = 'xxx'，可以被共享的调度器队列的名称
+            - 基于常规的操作获取url发送请求解析数据
+        5.修改配置文件：settings
+            - 指定调度器：
+                # 增加了一个去重容器类的配置, 作用使用Redis的set集合来存储请求的指纹数据, 从而实现请求去重的持久化
+                DUPEFILTER_CLASS = "scrapy_redis.dupefilter.RFPDupeFilter"
+                # 使用scrapy-redis组件自己的调度器
+                SCHEDULER = "scrapy_redis.scheduler.Scheduler"
+                # 配置调度器是否要持久化, 也就是当爬虫结束了, 要不要清空Redis中请求队列和去重指纹的set。如果是True, 就表示要持久化存储, 就不清空数据, 否则清空数据
+                SCHEDULER_PERSIST = True
+            - 指定管道：
+                ITEM_PIPELINES = {
+                'scrapy_redis.pipelines.RedisPipeline': 400
+            }
+
+            - 指定redis服务器：
+                REDIS_HOST = 'redis服务的ip地址'
+                REDIS_PORT = 6379
+        6.对redis的配置文件进行配置（redis.windows.conf）
+            - 取消默认绑定
+                - 将bind 127.0.0.1进行注释
+            - 关闭保护模式
+                - protected-mode yes：将yes改为no
+        7.启动redis的服务器和客户端
+            - redis服务端的启动：
+                - 在终端里执行：redis-server.exe redis.windows.conf
+            - 启动客户端：redis-cli
+
+        8.执行分布式程序
+            - 在日志输出可以看出日志hang住了，为啥会hang住，因为在等待起始的url
+        9.向调度器的队列中扔入一个起始的url：
+            - 在redis-cli：lpush fbsQueue http://wz.sun0769.com/political/index/politicsNewest?id=1
+            - proName:items命名的数据结构中
+
+- 增量式
+    - 概念：检测网站数据更新的情况，爬取最新更新出来的数据
+    - 核心：去重
+    - 实现增量：
+        - 对爬取的数据url进行监测，使用一个记录表存储爬取数据的url。如果记录表中已存在，说明已经爬取过，否则表示没有爬取过为新数据。
+        - 记录表实现:
+            - redis的set集合充当记录表
+            - 注意：3.0以上的redis无法存储字典和item，可以将redis的版本降低使用
